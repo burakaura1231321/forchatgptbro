@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Almanca kelimeleri kartlar ve quizlerle çalış.">
+  <title>WortWerk — Almanca Kelime Atölyesi</title>
+  <style>
+:root{--ink:#162521;--paper:#f7f3ea;--cream:#eee7d8;--coral:#ef745f;--teal:#1c7770;--yellow:#f2bd50;--white:#fffdf8;--muted:#65716d;--line:rgba(22,37,33,.14);--shadow:0 20px 60px rgba(34,52,46,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}.ambient{position:fixed;border-radius:50%;filter:blur(2px);pointer-events:none;z-index:-1}.ambient-one{width:380px;height:380px;background:rgba(239,116,95,.12);top:-170px;right:-100px}.ambient-two{width:300px;height:300px;background:rgba(28,119,112,.1);bottom:2%;left:-150px}.site-header{height:82px;max-width:1240px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;color:var(--ink);font-family:'Fraunces',serif;font-weight:700;font-size:22px;text-decoration:none}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:50% 50% 50% 12px;background:var(--coral);color:white;font-size:19px}.site-header nav{display:flex;gap:8px;align-items:center}.nav-link{border:0;background:transparent;color:var(--muted);font:600 14px 'DM Sans';padding:10px 13px;border-radius:99px;cursor:pointer}.nav-link:hover,.nav-link.active{background:var(--ink);color:white}.badge{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 4px;background:var(--coral);color:#fff;border-radius:9px;font-size:10px;margin-left:3px}.nav-link.active .badge{background:var(--yellow);color:var(--ink)}main{max-width:1180px;margin:auto;padding:0 28px 80px}.view{display:none;animation:fade .35s ease}.view.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{min-height:560px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:60px;padding:64px 20px 50px}.eyebrow{font-weight:700;font-size:12px;letter-spacing:.18em;color:var(--teal)}h1,h2,h3,p{margin-top:0}.hero h1,.page-title h1{font:700 clamp(45px,6vw,76px)/.98 'Fraunces',serif;letter-spacing:-.04em;margin:20px 0 24px}.hero h1 em{color:var(--coral);font-weight:600}.hero-copy>p{max-width:590px;font-size:18px;line-height:1.7;color:var(--muted)}.hero-actions,.result-actions{display:flex;gap:12px;margin-top:34px}.button{border:0;border-radius:9px;padding:15px 21px;font:700 14px 'DM Sans';cursor:pointer;transition:.2s;display:inline-flex;align-items:center;justify-content:center;gap:22px}.button:hover{transform:translateY(-2px)}.button.primary{background:var(--ink);color:white;box-shadow:0 8px 22px rgba(22,37,33,.18)}.button.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}.button.full{width:100%;font-size:16px}.word-preview{height:400px;position:relative}.preview-orbit{position:absolute;width:235px;height:235px;border:1px dashed rgba(28,119,112,.45);border-radius:50%;top:80px;left:90px;display:grid;place-items:center}.preview-orbit:before,.preview-orbit:after{content:'';position:absolute;border-radius:50%}.preview-orbit:before{inset:34px;background:var(--teal);box-shadow:var(--shadow)}.preview-orbit:after{width:18px;height:18px;background:var(--yellow);top:-9px}.preview-orbit span{z-index:1;color:white;font:700 66px 'Fraunces';letter-spacing:-.08em}.floating-chip{position:absolute;z-index:2;background:var(--white);padding:15px 20px;border:1px solid var(--line);box-shadow:0 12px 30px rgba(29,50,43,.1);font-family:'Fraunces';font-weight:700;font-size:18px;animation:float 4s ease-in-out infinite}.floating-chip small{display:block;color:var(--muted);font:500 11px 'DM Sans';margin-top:4px}.chip-one{right:0;top:36px;border-radius:18px 18px 4px 18px}.chip-two{left:0;bottom:18px;border-radius:18px 4px 18px 18px;animation-delay:-1.4s}.chip-three{right:8px;bottom:65px;border-radius:4px 18px 18px 18px;animation-delay:-2.5s}@keyframes float{50%{transform:translateY(-9px)}}.stats-strip{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink);color:white;border-radius:14px;padding:24px 10px;margin-bottom:90px}.stats-strip div{display:flex;flex-direction:column;align-items:center;border-right:1px solid rgba(255,255,255,.15)}.stats-strip div:last-child{border:0}.stats-strip strong{font:600 31px 'Fraunces'}.stats-strip span{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#b9c5c1;margin-top:4px}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:32px}.section-heading h2{font:600 38px 'Fraunces';margin:10px 0 0}.section-heading p{max-width:360px;color:var(--muted);line-height:1.6}.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.mode-card{position:relative;border-radius:14px;padding:27px;background:var(--white);border:1px solid var(--line);min-height:300px;cursor:pointer;transition:.25s;overflow:hidden}.mode-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.mode-card:after{content:'';position:absolute;width:100px;height:100px;border-radius:50%;right:-35px;bottom:-35px;opacity:.13}.mode-card.coral:after{background:var(--coral)}.mode-card.teal:after{background:var(--teal)}.mode-card.yellow:after{background:var(--yellow)}.mode-number{float:right;font:600 14px 'Fraunces';color:var(--muted)}.mode-icon{width:55px;height:55px;border-radius:50%;display:grid;place-items:center;font:700 17px 'Fraunces';margin-bottom:34px}.coral .mode-icon{background:#fbe1db;color:#bd4a39}.teal .mode-icon{background:#dbece8;color:var(--teal)}.yellow .mode-icon{background:#f9eac6;color:#9b6b0b}.mode-card h3{font:600 24px 'Fraunces';margin-bottom:12px}.mode-card p{color:var(--muted);line-height:1.55;font-size:14px}.mode-card button{border:0;background:transparent;padding:0;font:700 13px 'DM Sans';color:var(--ink);position:absolute;bottom:27px;cursor:pointer}.mode-card button span{margin-left:8px}.page-title{padding:70px 0 40px}.page-title h1{font-size:58px;margin:14px 0 12px}.page-title p{color:var(--muted);font-size:17px}.page-title.centered{text-align:center}.toolbar{display:flex;justify-content:space-between;gap:18px;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line)}.category-tabs,.pill-row{display:flex;gap:7px;flex-wrap:wrap}.category-tab,.pill-row button{border:1px solid var(--line);background:var(--white);padding:10px 17px;border-radius:99px;font:600 13px 'DM Sans';color:var(--muted);cursor:pointer}.category-tab.active,.pill-row button.active{background:var(--ink);color:#fff;border-color:var(--ink)}.search-box{display:flex;align-items:center;gap:7px;background:var(--white);border:1px solid var(--line);padding:10px 14px;border-radius:99px}.search-box input{border:0;outline:0;background:transparent;font:500 13px 'DM Sans';width:180px}.study-summary{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;padding:17px 3px}.word-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.word-card{background:var(--white);border:1px solid var(--line);border-radius:11px;padding:21px;cursor:pointer;position:relative;min-height:145px;transition:.2s}.word-card:hover{border-color:var(--teal);transform:translateY(-2px)}.word-card .category-label{font-size:10px;font-weight:700;letter-spacing:.13em;color:var(--teal)}.word-card h3{font:600 23px 'Fraunces';margin:14px 35px 8px 0}.word-card p{font-size:14px;color:var(--muted);line-height:1.45;transition:.2s}.word-card.concealed p{filter:blur(6px);user-select:none}.learn-button{position:absolute;right:16px;top:17px;border:1px solid var(--line);background:transparent;width:28px;height:28px;border-radius:50%;cursor:pointer;color:var(--muted)}.learn-button.learned{background:var(--teal);color:white;border-color:var(--teal)}.quiz-setup{padding-bottom:30px}.setup-panel{max-width:650px;margin:0 auto;background:var(--white);border:1px solid var(--line);border-radius:15px;padding:32px;box-shadow:var(--shadow)}.setup-group{margin-bottom:27px}.setup-group>label{display:block;font-weight:700;font-size:13px;margin-bottom:12px}.choice-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.choice-card{display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:18px;border:1px solid var(--line);background:var(--paper);border-radius:10px;cursor:pointer;color:var(--ink)}.choice-card.active{border:2px solid var(--teal);padding:17px;background:#f2f8f6}.choice-icon{color:var(--coral);font:700 17px 'Fraunces';margin-bottom:13px}.choice-card strong{font:600 15px 'DM Sans'}.choice-card small{color:var(--muted);margin-top:5px}.quiz-game{padding:65px 0}.quiz-topbar{max-width:760px;margin:0 auto 25px;display:flex;align-items:center;gap:18px}.icon-button{width:39px;height:39px;border-radius:50%;border:1px solid var(--line);background:var(--white);font-size:24px;cursor:pointer}.progress-wrap{flex:1}.progress-meta{display:flex;justify-content:space-between;font-size:12px;font-weight:700;margin-bottom:8px}.progress-track{height:6px;background:var(--cream);border-radius:4px;overflow:hidden}.progress-track div{height:100%;width:0;background:var(--coral);transition:.3s}.question-panel{max-width:760px;min-height:520px;margin:auto;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:52px;text-align:center;box-shadow:var(--shadow)}.question-panel h2{font:700 50px 'Fraunces';margin:20px 0 8px}.question-category{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.13em}.answer-area{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:40px 0 22px}.answer-option{padding:17px;border:1px solid var(--line);border-radius:9px;background:var(--paper);font:600 14px 'DM Sans';color:var(--ink);cursor:pointer;transition:.15s}.answer-option:hover:not(:disabled){border-color:var(--teal);background:#eff7f4}.answer-option.correct{background:#dcefe9;border-color:#3d9487;color:#155e55}.answer-option.wrong{background:#f9ded9;border-color:var(--coral);color:#a73829}.answer-option:disabled{cursor:default}.answer-area.true-false{grid-template-columns:1fr 1fr}.answer-area.true-false .answer-option{font-size:17px;padding:23px}.feedback{padding:13px 15px;border-radius:8px;font-size:14px;margin:4px 0 18px}.feedback.correct{background:#e3f1ec;color:#1d6e64}.feedback.wrong{background:#fae4df;color:#a33d30}.quiz-result{max-width:680px;margin:75px auto;text-align:center;background:var(--white);border:1px solid var(--line);padding:50px;border-radius:16px;box-shadow:var(--shadow)}.result-ring{width:130px;height:130px;border-radius:50%;margin:0 auto 27px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:conic-gradient(var(--teal) 0%,var(--cream) 0)}.result-ring:before{content:'';position:absolute}.result-ring strong{font:700 31px 'Fraunces'}.result-ring span{font-size:10px;text-transform:uppercase;letter-spacing:.1em}.quiz-result h2{font:600 40px 'Fraunces';margin:12px 0}.quiz-result>p{color:var(--muted)}.result-stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:10px;margin:30px 0}.result-stats div{padding:16px;border-right:1px solid var(--line);display:flex;flex-direction:column}.result-stats div:last-child{border:0}.result-stats strong{font:600 25px 'Fraunces'}.result-stats span{font-size:11px;color:var(--muted)}.result-actions{justify-content:center}.mistake-list{display:grid;gap:10px}.mistake-item{display:grid;grid-template-columns:1fr 1fr auto;gap:20px;align-items:center;background:var(--white);border:1px solid var(--line);padding:18px 22px;border-radius:10px}.mistake-item strong{font:600 20px 'Fraunces'}.mistake-item span{color:var(--muted);font-size:14px}.mistake-item button{border:1px solid var(--line);background:transparent;border-radius:99px;padding:8px 12px;font:600 12px 'DM Sans';cursor:pointer}.empty-state{text-align:center;padding:70px 20px;color:var(--muted)}.empty-state>div{font:600 36px 'Fraunces';color:var(--teal);margin-bottom:12px}.empty-state h3{color:var(--ink);font:600 25px 'Fraunces';margin-bottom:8px}.empty-state .button{margin-top:15px}.hidden{display:none!important}footer{max-width:1180px;margin:0 auto;padding:32px 28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}footer .brand{font-size:18px}footer .brand-mark{width:30px;height:30px;font-size:15px}footer p{margin:0}
+.database-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:25px}.database-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.database-card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.database-card.active{border:2px solid var(--teal);padding:21px}.database-card h3{font:600 23px 'Fraunces';margin:0 0 5px}.database-card p{margin:0;color:var(--muted);font-size:13px}.active-label{display:inline-block;color:var(--teal);font-size:10px;font-weight:700;letter-spacing:.1em;margin-top:9px}.database-card-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.small-button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:9px 12px;font:700 12px 'DM Sans';cursor:pointer}.small-button.danger{color:#a33d30}.database-builder{margin-top:28px;background:var(--white);border:1px solid var(--line);border-radius:15px;padding:28px;box-shadow:var(--shadow)}.database-builder h2{font:600 30px 'Fraunces';margin-bottom:8px}.database-builder>p{color:var(--muted);font-size:14px}.field-label{display:block;font-size:12px;font-weight:700;margin:22px 0 8px}.text-field,.word-entry input,.word-entry select{width:100%;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:12px 13px;font:500 14px 'DM Sans';outline:0}.text-field:focus,.word-entry input:focus,.word-entry select:focus{border-color:var(--teal)}.bulk-field{min-height:150px;resize:vertical;line-height:1.55}.bulk-help{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:9px;color:var(--muted);font-size:12px}.bulk-status{background:#e8f2ef;color:#28675e;padding:10px 13px;border-radius:8px;font-size:12px;margin:10px 0 0}.word-entry{display:grid;grid-template-columns:1fr 1fr 150px 38px;gap:9px;margin-bottom:9px}.remove-row{border:1px solid var(--line);background:transparent;border-radius:8px;color:var(--coral);font-size:20px;cursor:pointer}.builder-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:18px}.database-note{background:#e8f2ef;border-radius:10px;padding:14px 17px;color:#386760;font-size:13px;line-height:1.5;margin-bottom:22px}.toast{position:fixed;right:24px;bottom:24px;background:var(--ink);color:white;padding:13px 18px;border-radius:9px;box-shadow:var(--shadow);z-index:20;font-size:13px}
+@media(max-width:850px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:70px}.word-preview{display:none}.mode-grid,.word-grid,.database-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:58px}.stats-strip{margin-top:25px}.section-heading{align-items:start;flex-direction:column}.site-header{height:auto;padding-top:18px;padding-bottom:12px;gap:15px}.site-header nav{overflow-x:auto;max-width:70%}.nav-link{white-space:nowrap}.toolbar{align-items:flex-start;flex-direction:column}.search-box{width:100%}.search-box input{width:100%}.mistake-item{grid-template-columns:1fr auto}.mistake-item span{grid-column:1}.word-entry{grid-template-columns:1fr 1fr}.remove-row{min-height:38px}}
+@media(max-width:560px){main{padding:0 16px 55px}.site-header{padding-left:16px;padding-right:16px;align-items:flex-start;flex-direction:column}.site-header nav{max-width:100%;width:100%;padding-bottom:4px}.hero{padding:55px 2px 35px}.hero h1{font-size:45px}.hero-copy>p{font-size:16px}.stats-strip{grid-template-columns:1fr 1fr;gap:18px}.stats-strip div:nth-child(2){border:0}.mode-grid,.word-grid,.database-grid{grid-template-columns:1fr}.section-heading h2{font-size:32px}.page-title{padding-top:50px}.page-title h1{font-size:45px}.choice-row{grid-template-columns:1fr}.setup-panel{padding:22px 18px}.question-panel{padding:38px 18px;min-height:470px}.question-panel h2{font-size:39px}.answer-area{grid-template-columns:1fr}.quiz-result{padding:35px 18px}.result-actions,.hero-actions{flex-wrap:wrap}.study-summary span:last-child{display:none}.database-card{align-items:flex-start;flex-direction:column}.database-card-actions{justify-content:flex-start}.word-entry{grid-template-columns:1fr}.database-builder{padding:21px 16px}footer{margin:0 16px;padding-left:0;padding-right:0;flex-wrap:wrap;gap:15px}footer p{display:none}}
+
+  </style>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="WortWerk ana sayfa">
+      <span class="brand-mark">W</span>
+      <span>WortWerk</span>
+    </a>
+    <nav aria-label="Ana menü">
+      <button class="nav-link active" data-view="home">Ana Sayfa</button>
+      <button class="nav-link" data-view="study">Çalış</button>
+      <button class="nav-link" data-view="quiz">Quiz</button>
+      <button class="nav-link" data-view="mistakes">Yanlışlarım <span id="mistakeBadge" class="badge">0</span></button>
+      <button class="nav-link" data-view="databases">Veri Tabanları</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="view active">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">ALMANCA KELİME ATÖLYEN</span>
+          <h1>Kelimeleri ezberleme.<br><em>Onlarla tanış.</em></h1>
+          <p>Günlük Almancanın temel kelimelerini kartlarla keşfet, kısa testlerle pekiştir ve gelişimini takip et.</p>
+          <div class="hero-actions">
+            <button class="button primary" data-go="study">Çalışmaya başla <span>→</span></button>
+            <button class="button secondary" data-go="quiz">Hızlı quiz</button>
+          </div>
+        </div>
+        <div class="word-preview" aria-hidden="true">
+          <div class="floating-chip chip-one">die Zukunft <small>gelecek</small></div>
+          <div class="floating-chip chip-two">neugierig <small>meraklı</small></div>
+          <div class="floating-chip chip-three">entdecken <small>keşfetmek</small></div>
+          <div class="preview-orbit"><span>DE</span></div>
+        </div>
+      </div>
+
+      <div class="stats-strip">
+        <div><strong id="totalWords">0</strong><span>kelime</span></div>
+        <div><strong>3</strong><span>kategori</span></div>
+        <div><strong id="learnedCount">0</strong><span>öğrenildi</span></div>
+        <div><strong id="accuracyStat">—</strong><span>başarı</span></div>
+      </div>
+
+      <div class="section-heading">
+        <div><span class="eyebrow">NASIL ÇALIŞIR?</span><h2>Bugünkü rotanı seç</h2></div>
+        <p>Kısa oturumlarla düzenli çalış. Her yanlış, öğrenmek için yeni bir fırsat.</p>
+      </div>
+
+      <div class="mode-grid">
+        <article class="mode-card coral" data-go="study">
+          <span class="mode-number">01</span><div class="mode-icon">Aa</div>
+          <h3>Kelime kartları</h3><p>Almanca kelimeleri ve Türkçe anlamlarını kendi hızında incele.</p>
+          <button>Çalışmaya git <span>→</span></button>
+        </article>
+        <article class="mode-card teal" data-go="quiz">
+          <span class="mode-number">02</span><div class="mode-icon">✓</div>
+          <h3>Çoktan seçmeli</h3><p>Dört seçenek arasından doğru anlamı bul ve anında geri bildirim al.</p>
+          <button>Quiz başlat <span>→</span></button>
+        </article>
+        <article class="mode-card yellow" data-go="quiz" data-mode="truefalse">
+          <span class="mode-number">03</span><div class="mode-icon">±</div>
+          <h3>Doğru / Yanlış</h3><p>Kelime ve anlam eşleşmelerini hızlıca değerlendir, refleksini geliştir.</p>
+          <button>Teste başla <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section id="study" class="view">
+      <div class="page-title"><span class="eyebrow">KELİME KÜTÜPHANESİ</span><h1>Çalışma alanı</h1><p>Kategoriyi seç, kelimeleri incele ve bildiklerini işaretle.</p></div>
+      <div class="toolbar">
+        <div class="category-tabs" role="tablist">
+          <button class="category-tab active" data-category="all">Tümü</button>
+          <button class="category-tab" data-category="verb">Fiiller</button>
+          <button class="category-tab" data-category="adjective">Sıfatlar</button>
+          <button class="category-tab" data-category="noun">İsimler</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="wordSearch" type="search" placeholder="Kelime ara..." autocomplete="off"></label>
+      </div>
+      <div class="study-summary"><span id="studyResultCount">0 kelime gösteriliyor</span><span>Bir karta tıklayarak anlamını gizleyebilirsin.</span></div>
+      <div id="wordGrid" class="word-grid"></div>
+      <div id="emptyStudy" class="empty-state hidden"><div>⌕</div><h3>Kelime bulunamadı</h3><p>Arama ifaden ya da seçtiğin kategoriyle eşleşen bir kelime yok.</p></div>
+    </section>
+
+    <section id="quiz" class="view">
+      <div id="quizSetup" class="quiz-setup">
+        <div class="page-title centered"><span class="eyebrow">KENDİNİ DENE</span><h1>Quiz zamanı</h1><p>Test türünü ve soru sayısını seç. Her sorudan sonra doğru cevabı göreceksin.</p></div>
+        <div class="setup-panel">
+          <div class="setup-group"><label>Test türü</label><div class="choice-row">
+            <button class="choice-card active" data-quiz-mode="multiple"><span class="choice-icon">A B C</span><strong>Çoktan seçmeli</strong><small>4 seçenekten birini seç</small></button>
+            <button class="choice-card" data-quiz-mode="truefalse"><span class="choice-icon">✓ ×</span><strong>Doğru / Yanlış</strong><small>Eşleşmeyi değerlendir</small></button>
+          </div></div>
+          <div class="setup-group"><label>Soru sayısı</label><div class="pill-row"><button data-count="10" class="active">10</button><button data-count="20">20</button><button data-count="all">Tümü</button></div></div>
+          <div class="setup-group"><label>Yön</label><div class="pill-row"><button data-direction="de-tr" class="active">Almanca → Türkçe</button><button data-direction="tr-de">Türkçe → Almanca</button><button data-direction="mixed">Karışık</button></div></div>
+          <button id="startQuiz" class="button primary full">Quizi başlat <span>→</span></button>
+        </div>
+      </div>
+
+      <div id="quizGame" class="quiz-game hidden">
+        <div class="quiz-topbar"><button id="quitQuiz" class="icon-button" aria-label="Quizden çık">×</button><div class="progress-wrap"><div class="progress-meta"><span id="questionCounter">Soru 1 / 10</span><span id="quizScore">0 doğru</span></div><div class="progress-track"><div id="progressBar"></div></div></div></div>
+        <div class="question-panel">
+          <span id="questionPrompt" class="eyebrow">TÜRKÇE ANLAMI NEDİR?</span>
+          <h2 id="questionWord">entdecken</h2>
+          <p id="questionCategory" class="question-category">FİİL</p>
+          <div id="answerArea" class="answer-area"></div>
+          <div id="feedback" class="feedback hidden"></div>
+          <button id="nextQuestion" class="button primary hidden">Sonraki soru <span>→</span></button>
+        </div>
+      </div>
+
+      <div id="quizResult" class="quiz-result hidden">
+        <div id="resultRing" class="result-ring"><strong id="resultPercent">0%</strong><span>başarı</span></div>
+        <span class="eyebrow">QUIZ TAMAMLANDI</span><h2 id="resultTitle">Harika iş!</h2><p id="resultText"></p>
+        <div class="result-stats"><div><strong id="correctResult">0</strong><span>Doğru</span></div><div><strong id="wrongResult">0</strong><span>Yanlış</span></div><div><strong id="totalResult">0</strong><span>Toplam</span></div></div>
+        <div class="result-actions"><button id="retryQuiz" class="button primary">Tekrar dene</button><button class="button secondary" data-go="mistakes">Yanlışlarımı çalış</button></div>
+      </div>
+    </section>
+
+    <section id="mistakes" class="view">
+      <div class="page-title"><span class="eyebrow">TEKRAR ZAMANI</span><h1>Yanlışlarım</h1><p>Quizlerde zorlandığın kelimeler burada birikir. Öğrendikçe listeden çıkarabilirsin.</p></div>
+      <div id="mistakeList" class="mistake-list"></div>
+      <div id="emptyMistakes" class="empty-state"><div>✓</div><h3>Henüz yanlışın yok</h3><p>Bir quiz çöz; yanlış cevapladığın kelimeleri burada birlikte çalışalım.</p><button class="button primary" data-go="quiz">Quiz çöz</button></div>
+    </section>
+
+    <section id="databases" class="view">
+      <div class="page-title"><span class="eyebrow">KELİMELERİNİ YÖNET</span><h1>Veri tabanları</h1><p>Kendi Almanca–Türkçe kelime setlerini oluştur, kullan, sil veya tek HTML dosyası olarak paylaş.</p></div>
+      <div class="database-note">“Paylaşılabilir HTML indir” seçili veri tabanını uygulamanın içine yerleştirir. İnen tek dosyayı WhatsApp, e-posta veya başka bir yolla doğrudan gönderebilirsin.</div>
+      <div class="database-actions">
+        <button id="showBuilder" class="button primary">+ Yeni veri tabanı</button>
+        <button id="downloadShareable" class="button secondary">Paylaşılabilir HTML indir</button>
+      </div>
+      <div id="databaseGrid" class="database-grid"></div>
+      <div id="emptyDatabases" class="empty-state hidden"><div>＋</div><h3>Veri tabanı kalmadı</h3><p>Yeni bir veri tabanı oluşturup kelimelerini ekleyebilirsin.</p></div>
+
+      <div id="databaseBuilder" class="database-builder hidden">
+        <h2>Yeni veri tabanı oluştur</h2>
+        <p>Her satıra Almanca kelimeyi, Türkçe anlamını ve kelime türünü yaz.</p>
+        <label class="field-label" for="databaseName">Veri tabanı adı</label>
+        <input id="databaseName" class="text-field" type="text" maxlength="60" placeholder="Örn. A2 Kelimelerim">
+        <label class="field-label" for="bulkWords">Toplu kelime yapıştır <span style="font-weight:500;color:var(--muted)">(isteğe bağlı)</span></label>
+        <textarea id="bulkWords" class="text-field bulk-field" placeholder="sein — olmak&#10;haben — sahip olmak&#10;machen — yapmak"></textarea>
+        <div class="bulk-help"><span>Her satıra <strong>Almanca — Türkçe</strong> yaz. 100 satırı da tek seferde yapıştırabilirsin.</span><button id="convertBulkWords" class="small-button" type="button">Listeyi aktar</button></div>
+        <p id="bulkStatus" class="bulk-status hidden"></p>
+        <label class="field-label">Kelimeler</label>
+        <div id="wordEntries"></div>
+        <div class="builder-actions">
+          <button id="addWordRow" class="button secondary">+ Kelime satırı ekle</button>
+          <div><button id="cancelBuilder" class="button secondary">Vazgeç</button> <button id="saveDatabase" class="button primary">Kaydet ve kullan</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">W</span><span>WortWerk</span></a><p>Her gün birkaç kelime, her gün biraz daha Almanca.</p><span>© 2026</span></footer>
+  <script>
+const baseWords = [
+  ['abholen','gidip almak, karşılamak','verb'],['anfangen','başlamak','verb'],['aufbauen','kurmak, inşa etmek','verb'],['ausgeben','harcamak; dağıtmak','verb'],['behalten','saklamak, elinde tutmak','verb'],['bemerken','fark etmek','verb'],['benutzen','kullanmak','verb'],['beschreiben','tarif etmek, betimlemek','verb'],['bestehen','geçmek; var olmak','verb'],['besuchen','ziyaret etmek; bir yere gitmek','verb'],['bezahlen','ödemek','verb'],['bewegen','hareket ettirmek; hareket etmek','verb'],['bitten','rica etmek','verb'],['brauchen','ihtiyaç duymak','verb'],['denken','düşünmek','verb'],['entdecken','keşfetmek, fark etmek','verb'],['entscheiden','karar vermek','verb'],['erklären','açıklamak','verb'],['erlauben','izin vermek','verb'],['erzählen','anlatmak','verb'],['fehlen','eksik olmak; özlenmek','verb'],['folgen','takip etmek','verb'],['gehören','ait olmak','verb'],['gewinnen','kazanmak','verb'],['glauben','inanmak, sanmak','verb'],['hoffen','umut etmek','verb'],['sich kümmern','ilgilenmek, bakımını üstlenmek','verb'],['lachen','gülmek','verb'],['leihen','ödünç vermek veya almak','verb'],['lösen','çözmek','verb'],['merken','fark etmek, akılda tutmak','verb'],['mitbringen','yanında getirmek','verb'],['nachdenken','düşünmek, kafa yormak','verb'],['passieren','olmak, meydana gelmek','verb'],['planen','planlamak','verb'],['prüfen','kontrol etmek, sınamak','verb'],['reduzieren','azaltmak','verb'],['sich erinnern','hatırlamak','verb'],['schützen','korumak','verb'],['sparen','biriktirmek, tasarruf etmek','verb'],['steigen','yükselmek; binmek','verb'],['teilnehmen','katılmak','verb'],['vergleichen','karşılaştırmak','verb'],['verlassen','terk etmek; güvenmek','verb'],['vermeiden','kaçınmak','verb'],['vorbereiten','hazırlamak','verb'],['vorschlagen','önermek','verb'],['wählen','seçmek','verb'],['wechseln','değiştirmek','verb'],['zustimmen','kabul etmek, aynı fikirde olmak','verb'],
+  ['aufmerksam','dikkatli','adjective'],['abhängig','bağımlı; bağlı','adjective'],['anstrengend','yorucu, zahmetli','adjective'],['ausreichend','yeterli','adjective'],['bekannt','tanınmış; bilinen','adjective'],['deutlich','açık, belirgin','adjective'],['dringend','acil','adjective'],['ehrlich','dürüst','adjective'],['erreichbar','ulaşılabilir','adjective'],['erstaunlich','şaşırtıcı','adjective'],['freundlich','nazik, dostça','adjective'],['geduldig','sabırlı','adjective'],['gewöhnlich','sıradan, olağan','adjective'],['gefährlich','tehlikeli','adjective'],['gemütlich','rahat, sıcak ve huzurlu','adjective'],['knapp','az, sınırlı; kısa','adjective'],['neugierig','meraklı','adjective'],['notwendig','gerekli','adjective'],['ordentlich','düzenli, derli toplu','adjective'],['pünktlich','dakik, zamanında','adjective'],['sorgfältig','özenli, dikkatli','adjective'],['selbstständig','bağımsız','adjective'],['zuverlässig','güvenilir','adjective'],['zufrieden','memnun','adjective'],['unterschiedlich','farklı','adjective'],
+  ['der Alltag','günlük yaşam','noun'],['die Absicht','niyet','noun'],['der Eindruck','izlenim','noun'],['die Entscheidung','karar','noun'],['die Erfahrung','deneyim, tecrübe','noun'],['die Gelegenheit','fırsat','noun'],['die Umgebung','çevre, ortam','noun'],['die Entwicklung','gelişme, gelişim','noun'],['der Fortschritt','ilerleme','noun'],['die Geduld','sabır','noun'],['der Grund','neden, sebep','noun'],['die Herausforderung','zorluk, meydan okuma','noun'],['die Hoffnung','umut','noun'],['der Unterschied','fark','noun'],['die Lösung','çözüm','noun'],['die Möglichkeit','olanak, ihtimal','noun'],['die Meinung','fikir, görüş','noun'],['die Nachricht','haber, mesaj','noun'],['die Ordnung','düzen','noun'],['der Plan','plan','noun'],['der Schaden','zarar, hasar','noun'],['der Schlüssel','anahtar','noun'],['die Sicherheit','güvenlik, eminlik','noun'],['die Verantwortung','sorumluluk','noun'],['die Zukunft','gelecek','noun']
+].map(([de,tr,type],id)=>({id,de,tr,type}));
+
+const aliWords = [
+  ['sein','olmak','verb'],['haben','sahip olmak','verb'],['machen','yapmak','verb'],['gehen','gitmek','verb'],['kommen','gelmek','verb'],['sehen','görmek','verb'],['hören','duymak','verb'],['sagen','söylemek','verb'],['fragen','sormak','verb'],['antworten','cevap vermek','verb'],['essen','yemek','verb'],['trinken','içmek','verb'],['schlafen','uyumak','verb'],['wohnen','oturmak, ikamet etmek','verb'],['leben','yaşamak','verb'],['lernen','öğrenmek','verb'],['lesen','okumak','verb'],['schreiben','yazmak','verb'],['sprechen','konuşmak','verb'],['spielen','oynamak','verb'],['arbeiten','çalışmak','verb'],['kaufen','satın almak','verb'],['verkaufen','satmak','verb'],['suchen','aramak','verb'],['finden','bulmak','verb'],['geben','vermek','verb'],['nehmen','almak','verb'],['bringen','getirmek','verb'],['holen','gidip almak','verb'],['fahren','gitmek, araç sürmek','verb'],['laufen','koşmak, yürümek','verb'],['stehen','ayakta durmak','verb'],['sitzen','oturmak','verb'],['liegen','yatmak, durmak','verb'],['bleiben','kalmak','verb'],['warten','beklemek','verb'],['öffnen','açmak','verb'],['schließen','kapatmak','verb'],['beginnen','başlamak','verb'],['enden','bitmek','verb'],['helfen','yardım etmek','verb'],['lieben','sevmek','verb'],['mögen','hoşlanmak','verb'],['brauchen','ihtiyaç duymak','verb'],['bezahlen','ödemek','verb'],['kochen','yemek pişirmek','verb'],['tanzen','dans etmek','verb'],['singen','şarkı söylemek','verb'],['lachen','gülmek','verb'],['weinen','ağlamak','verb'],
+  ['gut','iyi','adjective'],['schlecht','kötü','adjective'],['groß','büyük','adjective'],['klein','küçük','adjective'],['alt','yaşlı, eski','adjective'],['jung','genç','adjective'],['schön','güzel','adjective'],['hässlich','çirkin','adjective'],['schnell','hızlı','adjective'],['langsam','yavaş','adjective'],['heiß','sıcak','adjective'],['kalt','soğuk','adjective'],['warm','ılık','adjective'],['neu','yeni','adjective'],['müde','yorgun','adjective'],['stark','güçlü','adjective'],['schwach','zayıf','adjective'],['leicht','hafif, kolay','adjective'],['schwer','ağır, zor','adjective'],['teuer','pahalı','adjective'],['billig','ucuz','adjective'],['freundlich','arkadaş canlısı','adjective'],['nett','hoş, nazik','adjective'],['glücklich','mutlu','adjective'],['traurig','üzgün','adjective'],
+  ['der Mann','adam','noun'],['die Frau','kadın','noun'],['das Kind','çocuk','noun'],['das Haus','ev','noun'],['die Schule','okul','noun'],['das Buch','kitap','noun'],['der Tisch','masa','noun'],['der Stuhl','sandalye','noun'],['die Tür','kapı','noun'],['das Fenster','pencere','noun'],['das Wasser','su','noun'],['das Brot','ekmek','noun'],['der Apfel','elma','noun'],['die Milch','süt','noun'],['der Hund','köpek','noun'],['die Katze','kedi','noun'],['die Stadt','şehir','noun'],['das Auto','araba','noun'],['der Zug','tren','noun'],['die Straße','sokak','noun'],['die Hand','el','noun'],['der Kopf','kafa','noun'],['der Tag','gün','noun'],['die Zeit','zaman','noun'],['die Arbeit','iş','noun']
+].map(([de,tr,type],id)=>({id,de,tr,type}));
+
+const embeddedDatabase = null;
+const categoryNames={verb:'FİİL',adjective:'SIFAT',noun:'İSİM'};
+const state={category:'all',quizMode:'multiple',count:10,direction:'de-tr',questions:[],index:0,correct:0,answered:false};
+const storageSuffix=embeddedDatabase?`-${embeddedDatabase.id}`:'';
+function readStorage(key,fallback){try{const value=localStorage.getItem(key);return value===null?fallback:JSON.parse(value)}catch{return fallback}}
+function writeStorage(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch{}}
+function normalizeDatabase(database){return{id:String(database.id||`db-${Date.now()}`),name:String(database.name||'İsimsiz Veri Tabanı'),words:(database.words||[]).map((word,id)=>({id,de:String(word.de||''),tr:String(word.tr||''),type:['verb','adjective','noun'].includes(word.type)?word.type:'verb'})).filter(word=>word.de&&word.tr)}}
+const defaultDatabase={id:'baslangic-seti',name:'burak',words:baseWords};
+const aliDatabase={id:'ali-seti',name:'ali',words:aliWords};
+let databases=readStorage(`wortwerk-databases${storageSuffix}`,null);
+if(!Array.isArray(databases))databases=embeddedDatabase?[normalizeDatabase(embeddedDatabase)]:[normalizeDatabase(defaultDatabase),normalizeDatabase(aliDatabase)];
+else databases=databases.map(normalizeDatabase);
+if(!embeddedDatabase&&readStorage('wortwerk-data-version',0)<2){
+  const burak=databases.find(database=>database.id==='baslangic-seti');if(burak)burak.name='burak';
+  if(!databases.some(database=>database.id==='ali-seti'))databases.push(normalizeDatabase(aliDatabase));
+  writeStorage('wortwerk-databases',databases);writeStorage('wortwerk-data-version',2);
+}
+let activeDatabaseId=readStorage(`wortwerk-active-database${storageSuffix}`,databases[0]?.id||null);
+if(!databases.some(database=>database.id===activeDatabaseId))activeDatabaseId=databases[0]?.id||null;
+let words=databases.find(database=>database.id===activeDatabaseId)?.words||[];
+let learned=new Set(readStorage(`wortwerk-learned-${activeDatabaseId}${storageSuffix}`,activeDatabaseId==='baslangic-seti'?readStorage('wortwerk-learned',[]):[]));
+let mistakes=new Set(readStorage(`wortwerk-mistakes-${activeDatabaseId}${storageSuffix}`,activeDatabaseId==='baslangic-seti'?readStorage('wortwerk-mistakes',[]):[]));
+let history=readStorage(`wortwerk-history-${activeDatabaseId}${storageSuffix}`,activeDatabaseId==='baslangic-seti'?readStorage('wortwerk-history',{correct:0,total:0}):{correct:0,total:0});
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const shuffle=a=>[...a].sort(()=>Math.random()-.5);
+
+function save(){
+  if(activeDatabaseId){writeStorage(`wortwerk-learned-${activeDatabaseId}${storageSuffix}`,[...learned]);writeStorage(`wortwerk-mistakes-${activeDatabaseId}${storageSuffix}`,[...mistakes]);writeStorage(`wortwerk-history-${activeDatabaseId}${storageSuffix}`,history)}
+  updateStats();
+}
+function saveDatabases(){writeStorage(`wortwerk-databases${storageSuffix}`,databases);writeStorage(`wortwerk-active-database${storageSuffix}`,activeDatabaseId)}
+function updateStats(){
+  $('#totalWords').textContent=words.length;$('#learnedCount').textContent=learned.size;$('#mistakeBadge').textContent=mistakes.size;
+  $('#accuracyStat').textContent=history.total?Math.round(history.correct/history.total*100)+'%':'—';
+}
+function showView(id){
+  $$('.view').forEach(v=>v.classList.toggle('active',v.id===id));$$('.nav-link').forEach(n=>n.classList.toggle('active',n.dataset.view===id));
+  if(id==='study')renderWords();if(id==='mistakes')renderMistakes();if(id==='databases')renderDatabases();window.scrollTo({top:0,behavior:'smooth'});
+}
+$$('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+$$('[data-go]').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.mode){state.quizMode=b.dataset.mode;syncQuizSetup()}showView(b.dataset.go)}));
+
+function renderWords(){
+  const query=$('#wordSearch').value.trim().toLocaleLowerCase('tr');
+  const filtered=words.filter(w=>(state.category==='all'||w.type===state.category)&&(!query||w.de.toLocaleLowerCase('tr').includes(query)||w.tr.toLocaleLowerCase('tr').includes(query)));
+  $('#studyResultCount').textContent=`${filtered.length} kelime gösteriliyor`;$('#emptyStudy').classList.toggle('hidden',filtered.length>0);
+  $('#wordGrid').innerHTML=filtered.map(w=>`<article class="word-card" data-id="${w.id}"><span class="category-label">${categoryNames[w.type]}</span><button class="learn-button ${learned.has(w.id)?'learned':''}" aria-label="Öğrendim olarak işaretle">✓</button><h3>${w.de}</h3><p>${w.tr}</p></article>`).join('');
+  $$('.word-card').forEach(card=>card.addEventListener('click',e=>{if(e.target.closest('.learn-button'))return;card.classList.toggle('concealed')}));
+  $$('.learn-button').forEach(btn=>btn.addEventListener('click',e=>{e.stopPropagation();const id=Number(btn.closest('.word-card').dataset.id);learned.has(id)?learned.delete(id):learned.add(id);btn.classList.toggle('learned');save()}));
+}
+$$('.category-tab').forEach(b=>b.addEventListener('click',()=>{$$('.category-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.category=b.dataset.category;renderWords()}));
+$('#wordSearch').addEventListener('input',renderWords);
+
+$$('[data-quiz-mode]').forEach(b=>b.addEventListener('click',()=>{state.quizMode=b.dataset.quizMode;syncQuizSetup()}));
+function syncQuizSetup(){$$('[data-quiz-mode]').forEach(b=>b.classList.toggle('active',b.dataset.quizMode===state.quizMode))}
+$$('[data-count]').forEach(b=>b.addEventListener('click',()=>{$$('[data-count]').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.count=b.dataset.count==='all'?words.length:Number(b.dataset.count)}));
+$$('[data-direction]').forEach(b=>b.addEventListener('click',()=>{$$('[data-direction]').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.direction=b.dataset.direction}));
+$('#startQuiz').addEventListener('click',startQuiz);$('#quitQuiz').addEventListener('click',resetQuiz);$('#retryQuiz').addEventListener('click',startQuiz);$('#nextQuestion').addEventListener('click',()=>{state.index++;state.index>=state.questions.length?showResults():renderQuestion()});
+
+function startQuiz(){
+  if(!words.length){showView('databases');showToast('Önce kelime içeren bir veri tabanı oluştur.');return}
+  state.questions=shuffle(words).slice(0,state.count);state.index=0;state.correct=0;state.answered=false;
+  $('#quizSetup').classList.add('hidden');$('#quizResult').classList.add('hidden');$('#quizGame').classList.remove('hidden');renderQuestion();
+}
+function resetQuiz(){$('#quizGame').classList.add('hidden');$('#quizResult').classList.add('hidden');$('#quizSetup').classList.remove('hidden')}
+function directionForQuestion(){return state.direction==='mixed'?(Math.random()>.5?'de-tr':'tr-de'):state.direction}
+function renderQuestion(){
+  state.answered=false;const word=state.questions[state.index];const direction=directionForQuestion();word.currentDirection=direction;
+  $('#questionCounter').textContent=`Soru ${state.index+1} / ${state.questions.length}`;$('#quizScore').textContent=`${state.correct} doğru`;$('#progressBar').style.width=`${state.index/state.questions.length*100}%`;
+  $('#questionPrompt').textContent=state.quizMode==='truefalse'?'BU EŞLEŞME DOĞRU MU?':direction==='de-tr'?'TÜRKÇE ANLAMI NEDİR?':'ALMANCASI NEDİR?';
+  $('#questionCategory').textContent=categoryNames[word.type];$('#feedback').className='feedback hidden';$('#nextQuestion').classList.add('hidden');
+  if(state.quizMode==='multiple')renderMultiple(word,direction);else renderTrueFalse(word,direction);
+}
+function renderMultiple(word,direction){
+  const key=direction==='de-tr'?'tr':'de',questionKey=direction==='de-tr'?'de':'tr';$('#questionWord').textContent=word[questionKey];
+  const distractors=shuffle(words.filter(w=>w.id!==word.id)).slice(0,3).map(w=>w[key]);const answers=shuffle([word[key],...distractors]);
+  $('#answerArea').className='answer-area';$('#answerArea').innerHTML=answers.map(a=>`<button class="answer-option">${a}</button>`).join('');
+  $$('.answer-option').forEach(b=>b.addEventListener('click',()=>answerQuestion(b.textContent===word[key],b,word[key],word)));
+}
+function renderTrueFalse(word,direction){
+  const key=direction==='de-tr'?'tr':'de',questionKey=direction==='de-tr'?'de':'tr',others=words.filter(w=>w.id!==word.id),isTrue=others.length?Math.random()>.5:true;
+  const shown=isTrue?word[key]:shuffle(others)[0][key];word.trueAnswer=isTrue;
+  $('#questionWord').innerHTML=`${word[questionKey]} <span style="color:var(--coral);font-size:.65em">—</span> ${shown}`;
+  $('#answerArea').className='answer-area true-false';$('#answerArea').innerHTML='<button class="answer-option" data-value="true">✓ Doğru</button><button class="answer-option" data-value="false">× Yanlış</button>';
+  $$('.answer-option').forEach(b=>b.addEventListener('click',()=>answerQuestion((b.dataset.value==='true')===isTrue,b,`${word.de} — ${word.tr}`,word)));
+}
+function answerQuestion(isCorrect,button,correctAnswer,word){
+  if(state.answered)return;state.answered=true;history.total++;
+  $$('.answer-option').forEach(b=>b.disabled=true);
+  if(isCorrect){button.classList.add('correct');state.correct++;history.correct++;mistakes.delete(word.id);showFeedback(true,'Doğru! Harika gidiyorsun.');}
+  else{button.classList.add('wrong');mistakes.add(word.id);if(state.quizMode==='multiple')$$('.answer-option').find(b=>b.textContent===correctAnswer)?.classList.add('correct');showFeedback(false,`Doğru cevap: ${correctAnswer}`)}
+  save();$('#quizScore').textContent=`${state.correct} doğru`;$('#nextQuestion').classList.remove('hidden');$('#nextQuestion').focus();
+}
+function showFeedback(ok,text){const f=$('#feedback');f.textContent=text;f.className=`feedback ${ok?'correct':'wrong'}`}
+function showResults(){
+  $('#quizGame').classList.add('hidden');$('#quizResult').classList.remove('hidden');const total=state.questions.length,wrong=total-state.correct,pct=Math.round(state.correct/total*100);
+  $('#resultPercent').textContent=pct+'%';$('#resultRing').style.background=`conic-gradient(var(--teal) ${pct}%,var(--cream) ${pct}%)`;$('#correctResult').textContent=state.correct;$('#wrongResult').textContent=wrong;$('#totalResult').textContent=total;
+  $('#resultTitle').textContent=pct>=80?'Harika iş!':pct>=50?'İyi gidiyorsun!':'Bir tur daha?';$('#resultText').textContent=pct>=80?'Kelimelere oldukça hâkimsin. Böyle devam et!':'Yanlışlarını gözden geçirip tekrar deneyebilirsin.';
+}
+function renderMistakes(){
+  const list=words.filter(w=>mistakes.has(w.id));$('#emptyMistakes').classList.toggle('hidden',list.length>0);
+  $('#mistakeList').innerHTML=list.map(w=>`<div class="mistake-item"><strong>${w.de}</strong><span>${w.tr}</span><button data-remove="${w.id}">Öğrendim ✓</button></div>`).join('');
+  $$('[data-remove]').forEach(b=>b.addEventListener('click',()=>{mistakes.delete(Number(b.dataset.remove));learned.add(Number(b.dataset.remove));save();renderMistakes()}));
+}
+
+function escapeHtml(value){return String(value).replace(/[&<>"']/g,character=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[character]))}
+function loadActiveDatabase(){
+  words=databases.find(database=>database.id===activeDatabaseId)?.words||[];
+  learned=new Set(readStorage(`wortwerk-learned-${activeDatabaseId}${storageSuffix}`,[]));
+  mistakes=new Set(readStorage(`wortwerk-mistakes-${activeDatabaseId}${storageSuffix}`,[]));
+  history=readStorage(`wortwerk-history-${activeDatabaseId}${storageSuffix}`,{correct:0,total:0});
+  updateStats();renderWords();renderMistakes();resetQuiz();
+}
+function switchDatabase(id){
+  if(id===activeDatabaseId)return;
+  activeDatabaseId=id;saveDatabases();loadActiveDatabase();renderDatabases();showToast('Veri tabanı değiştirildi.');
+}
+function deleteDatabase(index){
+  const database=databases[index];if(!database||!confirm(`“${database.name}” veri tabanını silmek istediğine emin misin?`))return;
+  databases.splice(index,1);
+  if(database.id===activeDatabaseId)activeDatabaseId=databases[0]?.id||null;
+  saveDatabases();loadActiveDatabase();renderDatabases();showToast('Veri tabanı silindi.');
+}
+function renderDatabases(){
+  $('#emptyDatabases').classList.toggle('hidden',databases.length>0);
+  $('#downloadShareable').disabled=!activeDatabaseId;
+  $('#databaseGrid').innerHTML=databases.map((database,index)=>`<article class="database-card ${database.id===activeDatabaseId?'active':''}"><div><h3>${escapeHtml(database.name)}</h3><p>${database.words.length} kelime</p>${database.id===activeDatabaseId?'<span class="active-label">ŞU ANDA KULLANILIYOR</span>':''}</div><div class="database-card-actions">${database.id===activeDatabaseId?'':`<button class="small-button" data-use-db="${index}">Kullan</button>`}<button class="small-button danger" data-delete-db="${index}">Sil</button></div></article>`).join('');
+  $$('[data-use-db]').forEach(button=>button.addEventListener('click',()=>switchDatabase(databases[Number(button.dataset.useDb)].id)));
+  $$('[data-delete-db]').forEach(button=>button.addEventListener('click',()=>deleteDatabase(Number(button.dataset.deleteDb))));
+}
+function wordRow(entry={de:'',tr:'',type:'verb'}){
+  const row=document.createElement('div');row.className='word-entry';
+  row.innerHTML='<input class="entry-de" type="text" placeholder="Almanca kelime" aria-label="Almanca kelime"><input class="entry-tr" type="text" placeholder="Türkçe anlamı" aria-label="Türkçe anlamı"><select class="entry-type" aria-label="Kelime türü"><option value="verb">Fiil</option><option value="adjective">Sıfat</option><option value="noun">İsim</option></select><button class="remove-row" type="button" aria-label="Satırı sil">×</button>';
+  row.querySelector('.entry-de').value=entry.de;row.querySelector('.entry-tr').value=entry.tr;row.querySelector('.entry-type').value=entry.type;
+  row.querySelector('.remove-row').addEventListener('click',()=>{if($$('.word-entry').length>1)row.remove();else{row.querySelector('.entry-de').value='';row.querySelector('.entry-tr').value=''}});
+  return row;
+}
+function openBuilder(){
+  $('#databaseBuilder').classList.remove('hidden');$('#databaseName').value='';$('#bulkWords').value='';$('#bulkStatus').classList.add('hidden');$('#wordEntries').innerHTML='';
+  for(let index=0;index<3;index++)$('#wordEntries').appendChild(wordRow());
+  $('#databaseName').focus();$('#databaseBuilder').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function inferWordType(de,tr,provided=''){
+  const types={fiil:'verb',verb:'verb',sıfat:'adjective',sifat:'adjective',adjective:'adjective',isim:'noun',noun:'noun'};
+  if(types[provided.toLocaleLowerCase('tr')])return types[provided.toLocaleLowerCase('tr')];
+  if(/^(der|die|das)\s/i.test(de))return'noun';
+  if(/(?:mak|mek)(?:\s|$|[,;])/i.test(tr))return'verb';
+  return'adjective';
+}
+function parseBulkWords(){
+  const text=$('#bulkWords').value.trim();if(!text){showToast('Önce kelime listesini kutuya yapıştır.');return}
+  const entries=[];let skipped=0;
+  text.split(/\r?\n/).map(line=>line.trim()).filter(Boolean).forEach(line=>{
+    const parts=line.split(/\s+[—–-]\s+|\t+/).map(part=>part.trim());
+    if(parts.length<2||!parts[0]||!parts[1]){skipped++;return}
+    const de=parts[0],tr=parts[1],type=inferWordType(de,tr,parts[2]||'');entries.push({de,tr,type});
+  });
+  if(!entries.length){alert('Liste okunamadı. Her satırı “Almanca — Türkçe” biçiminde yaz.');return}
+  $('#wordEntries').innerHTML='';entries.forEach(entry=>$('#wordEntries').appendChild(wordRow(entry)));
+  const status=$('#bulkStatus');status.textContent=`${entries.length} kelime aktarıldı${skipped?`, ${skipped} hatalı satır atlandı`:''}. Aşağıdan kontrol edip kaydedebilirsin.`;status.classList.remove('hidden');
+}
+function saveNewDatabase(){
+  const name=$('#databaseName').value.trim();const rows=$$('.word-entry').map(row=>({de:row.querySelector('.entry-de').value.trim(),tr:row.querySelector('.entry-tr').value.trim(),type:row.querySelector('.entry-type').value}));
+  const startedRows=rows.filter(row=>row.de||row.tr);
+  if(!name){alert('Veri tabanına bir ad yazmalısın.');$('#databaseName').focus();return}
+  if(!startedRows.length){alert('En az bir Almanca kelime ve Türkçe anlam eklemelisin.');return}
+  if(startedRows.some(row=>!row.de||!row.tr)){alert('Başladığın her satırda hem Almanca kelime hem Türkçe anlam bulunmalı.');return}
+  const database=normalizeDatabase({id:`db-${Date.now()}`,name,words:startedRows});databases.push(database);activeDatabaseId=database.id;
+  saveDatabases();loadActiveDatabase();renderDatabases();$('#databaseBuilder').classList.add('hidden');showToast('Yeni veri tabanı kaydedildi ve kullanıma alındı.');
+}
+function downloadShareableHtml(){
+  const current=databases.find(database=>database.id===activeDatabaseId);if(!current){showToast('Önce bir veri tabanı oluştur.');return}
+  const shared=normalizeDatabase({id:`paylasim-${Date.now()}`,name:current.name,words:current.words});
+  const clone=document.documentElement.cloneNode(true);
+  clone.querySelectorAll('.view').forEach(view=>view.classList.toggle('active',view.id==='home'));
+  clone.querySelectorAll('.nav-link').forEach(link=>link.classList.toggle('active',link.dataset.view==='home'));
+  clone.querySelector('#databaseBuilder')?.classList.add('hidden');clone.querySelector('.toast')?.remove();
+  let html='<!doctype html>\n'+clone.outerHTML;
+  const payload=JSON.stringify(shared).replace(/</g,'\\u003c');
+  html=html.replace('const embeddedDatabase = null;',`const embeddedDatabase = ${payload};`);
+  const blob=new Blob([html],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');
+  link.href=url;link.download=`WortWerk-${current.name.replace(/[^a-zA-Z0-9çğıöşüÇĞİÖŞÜ_-]+/g,'-')}.html`;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);showToast('Paylaşılabilir HTML dosyası indirildi.');
+}
+function showToast(message){
+  document.querySelector('.toast')?.remove();const toast=document.createElement('div');toast.className='toast';toast.textContent=message;document.body.appendChild(toast);setTimeout(()=>toast.remove(),2800);
+}
+$('#showBuilder').addEventListener('click',openBuilder);$('#addWordRow').addEventListener('click',()=>$('#wordEntries').appendChild(wordRow()));
+$('#convertBulkWords').addEventListener('click',parseBulkWords);$('#bulkWords').addEventListener('paste',()=>setTimeout(parseBulkWords,0));
+$('#cancelBuilder').addEventListener('click',()=>$('#databaseBuilder').classList.add('hidden'));$('#saveDatabase').addEventListener('click',saveNewDatabase);$('#downloadShareable').addEventListener('click',downloadShareableHtml);
+updateStats();renderWords();renderDatabases();
+
+  </script>
+</body>
+</html>
